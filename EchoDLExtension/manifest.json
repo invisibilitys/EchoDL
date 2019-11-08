@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Download Echo Video",
+  "name": "Download Echo360 Video",
   "description": "This extension will download a video from Echo360.",
   "version": "1.0",
   "content_scripts": [
@@ -11,14 +11,12 @@
       "persistent": false
     }
   ],
-  "permissions": [
-    "contextMenus",
-    "activeTab", "storage"
-   ],
+  "permissions": ["contextMenus", "activeTab", "storage"],
   "icons": {
     "16": "iconsmol.png",
     "48": "iconmed.png",
-    "128": "iconlarge.png"},
+    "128": "iconlarge.png",
+  },
   "background": {
     "matches": ["https://echo360.org.au/lesson/*"],
     "scripts": ["jquery-3.4.1.min.js", "background.js"],
