@@ -10,17 +10,17 @@ function downloadVideo2(info, tab) {
 };
 
 chrome.contextMenus.create({
-  id: "dl1",
-  title: "Video 1",
-  contexts:["page"],
-   documentUrlPatterns: ["https://echo360.org.au/lesson/*"]
+    id: "dl1",
+    title: "Video 1",
+    contexts:["page"],
+    documentUrlPatterns: ["https://echo360.org.au/lesson/*"]
 });
 
 chrome.contextMenus.create({
-  id: "dl2",
-  title: "Video 2",
-  contexts:["page"],
-   documentUrlPatterns: ["https://echo360.org.au/lesson/*"]
+    id: "dl2",
+    title: "Video 2",
+    contexts:["page"],
+    documentUrlPatterns: ["https://echo360.org.au/lesson/*"]
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
